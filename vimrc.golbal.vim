@@ -161,9 +161,9 @@ set expandtab
 "TAG can show the dotted line.
 "you can use :rtab to expendtab
 "set noexpandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 " 其他设置
 " ---------------------
@@ -184,9 +184,11 @@ set autochdir
 "set fdm=indent
 
 " 自动补齐字典
-autocmd filetype javascript set dictionary=$HOME/vim/dicts/javascript.dict
-autocmd filetype css set dictionary=$HOME/vim/dicts/css.dict
-autocmd filetype html set dictionary=$HOME/vim/dicts/html.dict
+
+autocmd filetype javascript set dictionary=:pwd\dicts\javascript.dict
+autocmd filetype css        set dictionary=:pwd\dicts\css.dict
+autocmd filetype html       set dictionary=:pwd\dicts\html.dict
+autocmd filetype php        set dictionary=:pwd\dicts\php.dict
 
 au BufRead,BufNewFile *.less    set filetype=css
 au BufRead,BufNewFile *.coffee  setf coffee

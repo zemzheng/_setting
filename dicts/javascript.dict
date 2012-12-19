@@ -1,3 +1,11 @@
+createElement
+getElementById
+getElementsByTagName
+encodeURI
+encodeURIComponent
+decodeURI
+decodeURIComponent
+require
 abstract
 alert
 Anchor
