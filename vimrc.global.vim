@@ -185,10 +185,10 @@ set autochdir
 
 " 自动补齐字典
 
-autocmd filetype javascript set dictionary=:pwd\dicts\javascript.dict
-autocmd filetype css        set dictionary=:pwd\dicts\css.dict
-autocmd filetype html       set dictionary=:pwd\dicts\html.dict
-autocmd filetype php        set dictionary=:pwd\dicts\php.dict
+autocmd filetype javascript set dictionary=$_setting\dicts\javascript.dict
+autocmd filetype css        set dictionary=$_setting\dicts\css.dict
+autocmd filetype html       set dictionary=$_setting\dicts\html.dict
+autocmd filetype php        set dictionary=$_setting\dicts\php.dict
 
 au BufRead,BufNewFile *.less    set filetype=css
 au BufRead,BufNewFile *.coffee  setf coffee
