@@ -1,0 +1,19 @@
+" Eaxmple By Zem
+let $_setting = "~/"
+let $_plugins = $_setting . 'plugins/{}'
+let $_backup  = $_setting . 'backup'
+
+" @execute pathogen#infect()
+" Global Setting 
+source $_setting/vimrc.global.vim
+
+" Global Win Setting
+source $_setting/vimrc.win.vim
+
+" Local Setting
+set backupext=.bak
+set backupdir=$_backup
+execute pathogen#infect('bundle/{}', $_plugins)
+
+
+
