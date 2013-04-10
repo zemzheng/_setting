@@ -195,5 +195,5 @@ au BufRead,BufNewFile *.coffee  setf coffee
 
 " vim: set nowrap
 
-
-
+" 将 swp 文件放这里
+set directory=$TEMP
