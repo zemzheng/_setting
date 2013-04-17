@@ -123,10 +123,10 @@ set number
 colorscheme evening
 
 "设置不自动换行
-"set nowrap
+set nowrap
 
 "显示下方的横向滚动条
-"set guioptions+=b
+set guioptions+=b
 
 " 缩进线
 "set list
