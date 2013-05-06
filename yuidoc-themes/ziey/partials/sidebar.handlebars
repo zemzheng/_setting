@@ -1,0 +1,71 @@
+<!-- vim:set filetype=html: -->
+<ul class="nav nav-list">{{#if modules}}
+<li class="nav-header">Modules</li>
+{{#modules}}
+<li>
+<a href="{{../projectRoot}}modules/{{name}}.html">{{displayName}}</a>{{#if submodules}}
+  <ul class="nav nav-list">
+    {{#submodules}}
+    <li><a href="{{../../../projectRoot}}modules/{{name}}.html#{{name}}">
+{{displayName}}
+    </a></li>
+    {{/submodules}}
+  </ul>
+{{/if}}
+
+</li>
+{{/modules}}
+<li class="divider"></li>
+{{/if}}
+{{#if classes}}
+<li class="nav-header">Classes</li>
+{{#classes}}
+<li>
+<a href="{{../projectRoot}}classes/{{name}}.html">{{name}}</a>
+</li>
+{{/classes}}
+<li class="divider"></li>
+{{/if}}
+{{#if methods}}
+<li class="nav-header">Methods</li>
+{{#methods}}
+<li>
+<a href="#methods_{{name}}">{{name}}</a>
+</li>
+{{/methods}}
+<li class="divider"></li>
+{{/if}}
+{{#if events}}
+<li class="nav-header">Events</li>
+{{#events}}
+<li>
+<a href="#events_{{name}}">{{name}}</a>
+</li>
+{{/events}}
+<li class="divider"></li>
+{{/if}}
+{{#if props}}
+<li class="nav-header">Props</li>
+{{#events}}
+<li>
+<a href="#props_{{name}}">{{name}}</a>
+</li>
+{{/events}}
+<li class="divider"></li>
+{{/if}}
+{{#if attributes}}
+<li class="nav-header">Attributes</li>
+{{#events}}
+<li>
+<a href="#attributes_{{name}}">{{name}}</a>
+</li>
+{{/events}}
+<li class="divider"></li>
+{{/if}}
+
+{{#if fileTree}}
+<li class="nav-header">Files</li>
+{{#buildFileTree fileTree}}{{/buildFileTree}}
+<li class="divider"></li>
+{{/if}}
+</ul>
