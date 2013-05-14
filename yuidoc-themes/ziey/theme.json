@@ -1,1 +1,5 @@
-{}
+{
+  "THEME_NAME" : "Ziey",
+  "THEME_URL"  : "https://github.com/zemzheng/_setting/tree/master/yuidoc-themes/ziey",
+  "THEME_DESC" : "My default yuidoc skins."
+}

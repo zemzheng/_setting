@@ -3,7 +3,7 @@ let $_setting = "~/"
 let $_backup  = $_setting . 'backup'
 
 let $_plugins = $_setting . 'plugins/{}'
-source $_setting/pathogen.vim
+source $_setting/pathogen/autoload/pathogen.vim
 execute pathogen#infect('bundle/{}', $_plugins)
 
 " @execute pathogen#infect()

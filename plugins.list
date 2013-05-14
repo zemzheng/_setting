@@ -1,5 +1,0 @@
-vim 插件管理工具
-git://github.com/tpope/vim-pathogen.git
-
-自动对齐工具
-https://github.com/godlygeek/tabular.git

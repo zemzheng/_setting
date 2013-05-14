@@ -120,7 +120,8 @@ set ff=unix
 " 页面风格
 " ------------------
 set number
-colorscheme evening
+" colorscheme evening
+colorscheme mango
 
 "设置不自动换行
 set nowrap
