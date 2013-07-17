@@ -1,2 +1,5 @@
 backup
 *.swp
+plugins/*
+!plugins/vundle
+!plugins/vundle/*

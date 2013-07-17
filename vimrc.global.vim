@@ -121,7 +121,7 @@ set ff=unix
 " ------------------
 set number
 " colorscheme evening
-colorscheme mango
+colorscheme pablo
 
 "设置不自动换行
 set nowrap
@@ -134,8 +134,8 @@ set guioptions+=b
 "set listchars=tab:>-,precedes:-,trail:-
 
 " 光标纵线
-set cursorcolumn
-set cursorline
+" set cursorcolumn
+" set cursorline
 
 " 设置光标超过 80 列的时候折行。
 " 不开启这个是因为，MLGB 的有时候不想你换行你能不能不换啊 - -....
@@ -191,10 +191,31 @@ autocmd filetype css        set dictionary=$_setting\dicts\css.dict
 autocmd filetype html       set dictionary=$_setting\dicts\html.dict
 autocmd filetype php        set dictionary=$_setting\dicts\php.dict
 
-au BufRead,BufNewFile *.less    set filetype=css
-au BufRead,BufNewFile *.coffee  setf coffee
 
 " vim: set nowrap
 
 " 将 swp 文件放这里
 set directory=$TEMP
+
+" 插件管理
+let $_vundle = $_plugins . 'vundle'
+filetype off                   " required!
+
+set rtp+=$_vundle
+call vundle#rc($_plugins)
+
+Bundle 'AutoClose'
+Bundle 'matchit.zip'
+
+Bundle 'ZenCoding.vim'
+Bundle 'Tabular'
+Bundle 'css3-syntax-plus'
+
+Bundle 'The-NERD-tree'
+
+
+" Bundle 'jsbeautify'
+" Bundle 'jshint.vim'
+
+
+
