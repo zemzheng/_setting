@@ -203,6 +203,7 @@ filetype off                   " required!
 
 set rtp+=$_vundle
 call vundle#rc($_plugins)
+Bundle 'vundle'
 
 Bundle 'AutoClose'
 Bundle 'matchit.zip'
