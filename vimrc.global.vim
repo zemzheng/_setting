@@ -162,9 +162,9 @@ set expandtab
 "TAG can show the dotted line.
 "you can use :rtab to expendtab
 "set noexpandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
 " 其他设置
 " ---------------------
@@ -173,9 +173,9 @@ set modeline
 
 "打开对文件类型插件的支持
 " 上面是不是已经设置过了呀
-"filetype on
-"filetype plugin on
-"filetype plugin indent on
+filetype on
+filetype plugin on
+filetype plugin indent on
 
 "设定文件浏览器目录为当前目录
 set autochdir
@@ -186,37 +186,17 @@ set autochdir
 
 " 自动补齐字典
 
-autocmd filetype javascript set dictionary=$_setting\dicts\javascript.dict
-autocmd filetype css        set dictionary=$_setting\dicts\css.dict
-autocmd filetype html       set dictionary=$_setting\dicts\html.dict
-autocmd filetype php        set dictionary=$_setting\dicts\php.dict
+autocmd filetype javascript set dictionary=$_setting/dicts/javascript.dict
+autocmd filetype css        set dictionary=$_setting/dicts/css.dict
+autocmd filetype html       set dictionary=$_setting/dicts/html.dict
+autocmd filetype php        set dictionary=$_setting/dicts/php.dict
 
 
 " vim: set nowrap
 
 " 将 swp 文件放这里
-set directory=$TEMP
+set directory=/tmp
 
 " 插件管理
-let $_vundle = $_plugins . 'vundle'
-filetype off                   " required!
-
-set rtp+=$_vundle
-call vundle#rc($_plugins)
-Bundle 'vundle'
-
-Bundle 'AutoClose'
-Bundle 'matchit.zip'
-
-Bundle 'ZenCoding.vim'
-Bundle 'Tabular'
-Bundle 'css3-syntax-plus'
-
-Bundle 'The-NERD-tree'
-
-
-" Bundle 'jsbeautify'
-" Bundle 'jshint.vim'
-
-
-
+source $_setting/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect( $_plugins . '{}' )

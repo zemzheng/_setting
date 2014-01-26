@@ -1,3 +1,15 @@
 [submodule "plugins/vundle"]
 	path = plugins/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "vim-pathogen"]
+	path = vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "plugins/emmet-vim"]
+	path = plugins/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "plugins/tabular"]
+	path = plugins/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "plugins/jshint.vim"]
+	path = plugins/jshint.vim
+	url = https://github.com/vim-scripts/jshint.vim.git
