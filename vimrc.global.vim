@@ -120,8 +120,7 @@ set ff=unix
 " 页面风格
 " ------------------
 set number
-" colorscheme evening
-colorscheme pablo
+colorscheme evening
 
 "设置不自动换行
 set nowrap
@@ -195,7 +194,7 @@ autocmd filetype php        set dictionary=$_setting/dicts/php.dict
 " vim: set nowrap
 
 " 将 swp 文件放这里
-set directory=/tmp
+set directory=$_backup
 
 " 插件管理
 source $_setting/vim-pathogen/autoload/pathogen.vim

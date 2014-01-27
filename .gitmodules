@@ -13,3 +13,15 @@
 [submodule "plugins/jshint.vim"]
 	path = plugins/jshint.vim
 	url = https://github.com/vim-scripts/jshint.vim.git
+[submodule "plugins/vim-multiple-cursors"]
+	path = plugins/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "plugins/gitv"]
+	path = plugins/gitv
+	url = https://github.com/gregsexton/gitv.git
+[submodule "plugins/vim-fugitive"]
+	path = plugins/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "plugins/vim-airline"]
+	path = plugins/vim-airline
+	url = https://github.com/bling/vim-airline.git
