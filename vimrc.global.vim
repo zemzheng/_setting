@@ -199,3 +199,5 @@ set directory=$_backup
 " 插件管理
 source $_setting/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect( $_plugins . '{}' )
+
+autocmd filetype haml setlocal autoindent sw=4 et
