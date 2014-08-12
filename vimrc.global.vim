@@ -190,6 +190,8 @@ autocmd filetype css        set dictionary=$_setting/dicts/css.dict
 autocmd filetype html       set dictionary=$_setting/dicts/html.dict
 autocmd filetype php        set dictionary=$_setting/dicts/php.dict
 
+autocmd filetype coffee set noexpandtab
+
 
 " vim: set nowrap
 
@@ -199,3 +201,14 @@ set directory=$_backup
 " 插件管理
 source $_setting/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect( $_plugins . '{}' )
+
+" GVIM 顶部菜单栏及显示
+set guioptions-=m
+set guioptions-=T
+map <silent> <F2> :if &guioptions =~# 'T' <Bar>
+        \set guioptions-=T <Bar>
+        \set guioptions-=m <bar>
+    \else <Bar>
+        \set guioptions+=T <Bar>
+        \set guioptions+=m <Bar>
+    \endif<CR>
