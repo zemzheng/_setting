@@ -26,5 +26,8 @@
 	path = plugins/vim-airline
 	url = https://github.com/bling/vim-airline.git
 [submodule "plugins\\vim-coffee-script"]
-	path = plugins\\vim-coffee-script
+	path = plugins/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "plugins\\vim-haml"]
+	path = plugins/vim-haml
+	url = https://github.com/tpope/vim-haml.git
