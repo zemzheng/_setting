@@ -181,7 +181,7 @@ set autochdir
 
 "设置代码折叠的方式，这样每个program、module、subroutine、function都可以折叠了
 " set foldmethod=syntax
-"set fdm=indent
+set fdm=indent
 
 " 自动补齐字典
 
@@ -190,8 +190,10 @@ autocmd filetype css        set dictionary=$_setting/dicts/css.dict
 autocmd filetype html       set dictionary=$_setting/dicts/html.dict
 autocmd filetype php        set dictionary=$_setting/dicts/php.dict
 
+autocmd filetype haml setlocal autoindent sw=4 et
+autocmd filetype coffee set noexpandtab
 
-" vim: set nowrap
+set nowrap
 
 " 将 swp 文件放这里
 set directory=$_backup
@@ -200,4 +202,14 @@ set directory=$_backup
 source $_setting/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect( $_plugins . '{}' )
 
-autocmd filetype haml setlocal autoindent sw=4 et
+" GVIM 顶部菜单栏及显示
+set guioptions-=m
+set guioptions-=T
+map <silent> <F2> :if &guioptions =~# 'T' <Bar>
+        \set guioptions-=T <Bar>
+        \set guioptions-=m <bar>
+    \else <Bar>
+        \set guioptions+=T <Bar>
+        \set guioptions+=m <Bar>
+    \endif<CR>
+
