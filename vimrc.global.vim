@@ -181,7 +181,7 @@ set autochdir
 
 "设置代码折叠的方式，这样每个program、module、subroutine、function都可以折叠了
 " set foldmethod=syntax
-set fdm=indent
+" set fdm=indent
 
 " 自动补齐字典
 
