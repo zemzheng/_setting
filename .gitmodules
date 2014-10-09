@@ -19,6 +19,6 @@
 [submodule "plugins/vim-coffee-script"]
 	path = plugins/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "plugins/vim-haml"]
-	path = plugins/vim-haml
-	url = https://github.com/tpope/vim-haml.git
+[submodule "plugins/vim-less"]
+	path = plugins/vim-less
+	url = https://github.com/groenewege/vim-less.git
