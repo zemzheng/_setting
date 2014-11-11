@@ -189,9 +189,8 @@ autocmd filetype javascript set dictionary=$_setting/dicts/javascript.dict
 autocmd filetype css        set dictionary=$_setting/dicts/css.dict
 autocmd filetype html       set dictionary=$_setting/dicts/html.dict
 autocmd filetype php        set dictionary=$_setting/dicts/php.dict
-
-autocmd filetype haml setlocal autoindent sw=4 et
-autocmd filetype coffee set noexpandtab
+autocmd filetype coffee     retab && set expandtab
+autocmd filetype python     retab && set expandtab
 
 set nowrap
 

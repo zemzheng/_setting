@@ -7,7 +7,9 @@ json =
 # @description |
 ###
 """
-			do : " do ( | ) -> "
+			do : """
+do ( | ) ->
+	"""
 
 	javascript :
 		snippets :

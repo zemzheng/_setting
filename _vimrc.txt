@@ -10,6 +10,9 @@ source $_setting/vimrc.global.vim
 " Global Win Setting
 source $_setting/vimrc.win.vim
 
+" Golbal Emmet Setting
+source $_setting/emmet.map.vim
+
 " Local Setting
 set backupext=.bak
 set backupdir=$_backup
