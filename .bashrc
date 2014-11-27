@@ -1,10 +1,16 @@
 
+alias .="cd -"
+alias ..="cd .."
+alias ...="cd ../../"
+
+alias c="clear"
+
 alias gs="git status -sb"
 alias ga="git add -A && git commit"
 alias gk="gitk --all &"
 alias gt="git log --pretty=oneline --graph --all --decorate"
 
-function vi(){
+function v(){
     if [ ! -n "$1" ] ; then
         gvim . &
     else
@@ -14,7 +20,7 @@ function vi(){
 }
 
 function zhelper_base(){
-    echo "# ## vi = gvim . &"
+    echo "# ## v  = gvim . &"
     echo "# ## gs = git status"
     echo "# ## ga = git add -A && git commit"
     echo "# ## gk = gitk --all &"
