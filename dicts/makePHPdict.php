@@ -8,10 +8,10 @@ function makeLine( $str, $type ){
             $link = str_replace( '_', '-', $str );
             $link = "\t# http://php.net/manual/en/function.$link.php";
             break;
-        # case 'class':
-        #     $link = str_replace( '_', '-', $str );
-        #     $link = "\t# http://php.net/manual/en/class.$link.php";
-        #     break;
+        case 'class':
+            $link = str_replace( '_', '-', $str );
+            $link = "\t# http://php.net/manual/en/class.$link.php";
+            break;
     }
     return "$str$link\n";
 }
