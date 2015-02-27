@@ -1,8 +1,8 @@
 " Eaxmple By Zem
-let $_setting = "~/vimsetting/"
-let $_backup  = $_setting . 'backup'
+let $_setting = "~/vimsetting"
+let $_backup  = $_setting . '/backup'
 
-let $_plugins = $_setting . 'plugins/'
+let $_plugins = $_setting . '/plugins/'
 
 " Global Setting 
 source $_setting/vimrc.global.vim
