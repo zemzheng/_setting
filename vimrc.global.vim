@@ -133,8 +133,11 @@ set guioptions+=b
 "set listchars=tab:>-,precedes:-,trail:-
 
 " 光标纵线
-" set cursorcolumn
+set cursorcolumn
 " set cursorline
+
+" 不要界面闪烁
+set novisualbell
 
 " 设置光标超过 80 列的时候折行。
 " 不开启这个是因为，MLGB 的有时候不想你换行你能不能不换啊 - -....
@@ -152,7 +155,7 @@ set sm
 " 在命令模式下使用 Tab 自动补全的时候，将补全内容使用一个漂亮的单行菜单形式显示出来。
 set wildmenu 
 " 不使用“Shift + 方向键”选择文本，“Shift + 方向键”代表向指定方向跳一个单词。如果你喜欢这项功能的话，可以使用“set keymodel=startsel,stopsel”打开它。
-set keymodel= 
+set keymodel=startsel,stopsel
 
 
 " tab 相关
@@ -191,6 +194,10 @@ autocmd filetype html       set dictionary=$_setting/dicts/html.dict
 autocmd filetype php        set dictionary=$_setting/dicts/php.dict
 autocmd filetype coffee     retab && set expandtab
 autocmd filetype python     retab && set expandtab
+autocmd filetype html       set expandtab
+au BufNewFile,BufRead *.vue set filetype=html
+au BufNewFile,BufRead *.ejs set filetype=html
+
 
 set nowrap
 
@@ -199,7 +206,7 @@ set directory=$_backup
 
 " 插件管理
 source $_setting/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect( $_plugins . '{}' )
+execute pathogen#infect( $_plugins . '/{}' )
 
 " GVIM 顶部菜单栏及显示
 set guioptions-=m
@@ -211,4 +218,3 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
         \set guioptions+=T <Bar>
         \set guioptions+=m <Bar>
     \endif<CR>
-
