@@ -224,9 +224,62 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 " https://github.com/mantoni/eslint_d.js#editor-integration
 let g:syntastic_javascript_checkers = ['eslint']
-" let g:syntastic_javascript_javascript_exec = 'eslint'
+let g:syntastic_javascript_javascript_exec = 'eslint'
 let g:syntastic_javascript_eslint_args = "--parser babel-eslint --rule '{\"strict\": 0}'"
+
+
+" 字体
+set guifont=SimSun-ExtB:h12
+
+let g:UltiSnipsSnippetDirectories=[$_setting.'/UltiSnips']
+
+let mapleader = "-"
+
+" nnoremap <leader>evg :tabnew $_setting/vimrc.global.vim<cr>
+" nnoremap <leader>evw :tabnew $_setting/vimrc.win.vim<cr>
+" nnoremap <leader>evs :source $MYVIMRC<cr>
+" 
+" nnoremap <leader>ov. : vsp .<cr>
+" nnoremap <leader>os. : sp .<cr>
+" nnoremap <leader>o.  : tabnew .<cr>
+" 
+" nnoremap <leader>f   :execute 'normal! diwmqh/' . "(<esc>" . '%a => `q'
+" 
+nnoremap <leader>ec :tabnew $MYVIMRC<cr>
+nnoremap <leader>ck :SyntasticCheck eslint --parser babel-eslint --rule '{\"strict\": 0}'<cr>
+
+" inoremap jk <esc>
+" inoremap <esc> <nop>
+
+" http://vim.wikia.com/wiki/Use_cygwin_shell 
+" set shell=sh
+" set shellcmdflag=-c
+" set shellxquote=\"
+" 
+" set grepprg=grep\ -r\ -l
+" 
+" " http://learnvimscriptthehardway.onefloweroneworld.com/chapters/33.html
+" nnoremap <leader>g :set operatorfunc=GrepOperator<cr>g@
+" vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>
+" 
+" function! GrepOperator(type)
+"     if a:type ==# 'v'
+"         normal! `<v`>y
+"     elseif a:type ==# 'char'
+"         normal! `[v`]y
+"     else
+"         return
+"     endif
+" 
+"     silent execute "grep! " . shellescape(@@) . " ."
+"     copen
+" endfunction
+" 
+" function! Eslint()
+"     exe "r !eslint --parser babel-eslint --rule '{\"strict\": 0}' " . getcwd() . "/%"
+" endfunction
+" 

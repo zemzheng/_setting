@@ -191,3 +191,17 @@ Window
 with
 FALSE
 TRUE
+render
+getInitialState
+getDefaultProps
+propTypes
+statics
+displayName
+componentWillMount
+componentDidMount
+componentWillReceiveProps
+shouldComponentUpdate
+componentWillUpdate
+componentDidUpdate
+componentWillUnmount
+setState

@@ -28,3 +28,15 @@
 [submodule "plugins/ctrlp"]
 	path = plugins/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "plugins/vim-javascript"]
+	path = plugins/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "plugins/ultinsnips"]
+	path = plugins/ultinsnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "plugins/vimshell"]
+	path = plugins/vimshell
+	url = https://github.com/Shougo/vimshell.vim.git
+[submodule "plugins/vimproc"]
+	path = plugins/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
