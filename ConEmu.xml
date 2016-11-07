@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2016-02-04 09:13:51" build="150513">
-			<value name="StartType" type="hex" data="02"/>
+		<key name=".Vanilla" modified="2016-11-07 13:06:37" build="150513">
+			<value name="StartType" type="hex" data="00"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
-			<value name="StartTasksName" type="string" data="{Shells::cmd}"/>
+			<value name="StartTasksName" type="string" data=""/>
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="ColorTable00" type="dword" data="00000000"/>
@@ -51,7 +51,7 @@
 			<value name="ExtendFontBoldIdx" type="hex" data="0c"/>
 			<value name="ExtendFontItalicIdx" type="hex" data="0d"/>
 			<value name="CursorTypeActive" type="dword" data="000232c1"/>
-			<value name="CursorTypeInactive" type="dword" data="00823281"/>
+			<value name="CursorTypeInactive" type="dword" data="00823283"/>
 			<value name="ClipboardDetectLineEnd" type="hex" data="01"/>
 			<value name="ClipboardBashMargin" type="hex" data="00"/>
 			<value name="ClipboardTrimTrailing" type="hex" data="02"/>
@@ -68,13 +68,13 @@
 			<value name="ConVisible" type="hex" data="00"/>
 			<value name="ConInMode" type="dword" data="ffffffff"/>
 			<value name="UseInjects" type="hex" data="01"/>
-			<value name="SetDefaultTerminal" type="hex" data="01"/>
-			<value name="SetDefaultTerminalStartup" type="hex" data="01"/>
-			<value name="SetDefaultTerminalStartupTSA" type="hex" data="01"/>
+			<value name="SetDefaultTerminal" type="hex" data="00"/>
+			<value name="SetDefaultTerminalStartup" type="hex" data="00"/>
+			<value name="SetDefaultTerminalStartupTSA" type="hex" data="00"/>
 			<value name="DefaultTerminalAgressive" type="hex" data="01"/>
 			<value name="DefaultTerminalNoInjects" type="hex" data="00"/>
 			<value name="DefaultTerminalNewWindow" type="hex" data="00"/>
-			<value name="DefaultTerminalConfirm" type="hex" data="00"/>
+			<value name="DefaultTerminalConfirm" type="hex" data="01"/>
 			<value name="DefaultTerminalApps" type="string" data="explorer.exe"/>
 			<value name="ProcessAnsi" type="hex" data="01"/>
 			<value name="AnsiLog" type="hex" data="00"/>
@@ -87,42 +87,11 @@
 			<value name="StoreTaskbarCommands" type="hex" data="00"/>
 			<value name="SaveCmdHistory" type="hex" data="01"/>
 			<value name="CmdLineHistory" type="multi">
-				<line data="sh --login -cur_console:n"/>
 				<line data="{Bash::Git bash}"/>
-				<line data="&quot;C:\Windows\gvim.bat&quot; "/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\gonup_proj\v2&quot; -new_console"/>
-				<line data="&quot;&quot;C:\Windows\system32\cmd.exe&quot;  -new_console&quot;"/>
-				<line data="&quot;E:\tencent\joox_cms_trunk\nodebob\build.bat&quot; "/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\joox-op&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;D:\nodejs.0.10.35\node_modules\webpack&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_document&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\joox-cms-doc-editor\release&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\joox-cms-doc-editor&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\nodebob&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\joox-cms-doc-editor\tmp_publish&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\joox-cms-doc-editor\tmp_pkg&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\joox-cms-doc-editor\pkg&quot; -new_console"/>
-				<line data="{Shells::cmd (Admin)}"/>
-				<line data="&quot;C:\Program Files (x86)\Git\bin\wish.exe&quot; &quot;C:/Program Files (x86)/Git/bin/gitk&quot; -- --all"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\mid-node&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\管理平台3.2配置后台开发&quot; -new_console"/>
-				<line data="&quot;&quot;cmd.exe&quot;  -new_console&quot;"/>
-				<line data="&quot;&quot;C:\Python27\python.exe&quot;  -new_console&quot;"/>
-				<line data="&quot;&quot;C:\Program Files (x86)\Git\bin\sh.exe&quot; &quot;--login&quot; &quot;E:\tencent\joox_cms_trunk\front-v2\local2server.sh&quot;  -new_console&quot;"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\github\ziey-i18n-loader&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\front2&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\front\socket.io&quot; -new_console"/>
-				<line data="cmd -cur_console:n"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\front\htdocs2\scripts\page\ad\banner&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\skin-shop\src\views\shop&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\webpack+react-front&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\github&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\skin-shop\node_modules\vue\src&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\github\gulp-ziey-i18n&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\front\htdocs2\scripts\tool\router.js&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\front\node_modules\gulp-ziey-i18n&quot; -new_console"/>
-				<line data="&quot;C:\Windows\system32\cmd.exe&quot; /s /k pushd &quot;E:\tencent\joox_cms_trunk\front\htdocs2\scripts\tool&quot; -new_console"/>
-				<line data="{Putty}"/>
+				<line data="bash --login -i -cur_console:n"/>
+				<line data="chcp utf8 &amp;&amp; bash --login -i -cur_console:n"/>
+				<line data="bash --login -i -cur_console:n chcp utf8"/>
+				<line data="bash --login -cur_console:n"/>
 			</value>
 			<value name="SingleInstance" type="hex" data="00"/>
 			<value name="ShowHelpTooltips" type="hex" data="01"/>
@@ -138,24 +107,24 @@
 			<value name="Multi.UseNumbers" type="hex" data="01"/>
 			<value name="Multi.UseWinTab" type="hex" data="00"/>
 			<value name="Multi.AutoCreate" type="hex" data="00"/>
-			<value name="Multi.LeaveOnClose" type="hex" data="01"/>
-			<value name="Multi.HideOnClose" type="hex" data="01"/>
+			<value name="Multi.LeaveOnClose" type="hex" data="00"/>
+			<value name="Multi.HideOnClose" type="hex" data="00"/>
 			<value name="Multi.MinByEsc" type="hex" data="02"/>
 			<value name="MapShiftEscToEsc" type="hex" data="01"/>
 			<value name="Multi.Iterate" type="hex" data="01"/>
 			<value name="Multi.SplitWidth" type="hex" data="04"/>
 			<value name="Multi.SplitHeight" type="hex" data="04"/>
 			<value name="KeyboardHooks" type="hex" data="01"/>
-			<value name="FontName" type="string" data="新宋体"/>
+			<value name="FontName" type="string" data="Consolas"/>
 			<value name="FontName2" type="string" data="Consolas"/>
 			<value name="FontAutoSize" type="hex" data="00"/>
-			<value name="FontSize" type="dword" data="0000000e"/>
+			<value name="FontSize" type="dword" data="00000014"/>
 			<value name="FontSizeX" type="dword" data="00000000"/>
 			<value name="FontUseDpi" type="hex" data="01"/>
 			<value name="FontUseUnits" type="hex" data="01"/>
 			<value name="FontSizeX2" type="dword" data="00000000"/>
 			<value name="FontSizeX3" type="dword" data="00000000"/>
-			<value name="FontCharSet" type="hex" data="86"/>
+			<value name="FontCharSet" type="hex" data="00"/>
 			<value name="Anti-aliasing" type="dword" data="00000006"/>
 			<value name="FontBold" type="hex" data="00"/>
 			<value name="FontItalic" type="hex" data="00"/>
@@ -166,7 +135,7 @@
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="00"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
-			<value name="AlphaValue" type="hex" data="ea"/>
+			<value name="AlphaValue" type="hex" data="c8"/>
 			<value name="AlphaValueSeparate" type="hex" data="00"/>
 			<value name="AlphaValueInactive" type="hex" data="ff"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
@@ -174,14 +143,14 @@
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd Width" type="dword" data="000000b6"/>
-			<value name="ConWnd Height" type="dword" data="0000003b"/>
+			<value name="ConWnd Width" type="dword" data="000000ae"/>
+			<value name="ConWnd Height" type="dword" data="00000016"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="dword" data="00000241"/>
-			<value name="ConWnd Y" type="dword" data="00000095"/>
+			<value name="ConWnd X" type="dword" data="fffff852"/>
+			<value name="ConWnd Y" type="dword" data="0000015a"/>
 			<value name="16bit Height" type="dword" data="00000000"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
-			<value name="IntegralSize" type="hex" data="00"/>
+			<value name="IntegralSize" type="hex" data="01"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="QuakeAnimation" type="dword" data="0000012c"/>
 			<value name="HideCaption" type="hex" data="00"/>
@@ -316,7 +285,7 @@
 			<value name="Tabs" type="hex" data="01"/>
 			<value name="TabsLocation" type="hex" data="00"/>
 			<value name="TabIcons" type="hex" data="01"/>
-			<value name="OneTabPerGroup" type="hex" data="00"/>
+			<value name="OneTabPerGroup" type="hex" data="01"/>
 			<value name="ActivateSplitMouseOver" type="hex" data="01"/>
 			<value name="TabSelf" type="hex" data="01"/>
 			<value name="TabLazy" type="hex" data="01"/>
@@ -324,7 +293,7 @@
 			<value name="TabRecent" type="hex" data="01"/>
 			<value name="TabDblClick" type="dword" data="00000001"/>
 			<value name="TabBtnDblClick" type="dword" data="00000000"/>
-			<value name="TabsOnTaskBar" type="hex" data="00"/>
+			<value name="TabsOnTaskBar" type="hex" data="02"/>
 			<value name="TaskBarOverlay" type="hex" data="01"/>
 			<value name="TaskbarProgress" type="hex" data="01"/>
 			<value name="TabCloseMacro" type="string" data=""/>
@@ -364,7 +333,7 @@
 			<value name="MinimizeOnLoseFocus" type="hex" data="00"/>
 			<value name="DisableFarFlashing" type="hex" data="00"/>
 			<value name="DisableAllFlashing" type="hex" data="00"/>
-			<value name="FindText" type="string" data="dnd"/>
+			<value name="FindText" type="string" data=""/>
 			<value name="FindMatchCase" type="hex" data="00"/>
 			<value name="FindMatchWholeWords" type="hex" data="00"/>
 			<value name="FindTransparent" type="hex" data="01"/>
@@ -398,7 +367,7 @@
 			<value name="PanView.UsePicView2" type="hex" data="01"/>
 			<value name="PanView.RestoreOnStartup" type="hex" data="00"/>
 			<value name="Update.VerLocation" type="string" data=""/>
-			<value name="Update.CheckOnStartup" type="hex" data="00"/>
+			<value name="Update.CheckOnStartup" type="hex" data="01"/>
 			<value name="Update.CheckHourly" type="hex" data="00"/>
 			<value name="Update.ConfirmDownload" type="hex" data="01"/>
 			<value name="Update.UseBuilds" type="hex" data="02"/>
@@ -411,9 +380,9 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2016-02-04 09:13:51" build="150513">
+			<key name="HotKeys" modified="2016-11-07 13:06:37" build="150513">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
-				<value name="Multi.Modifier" type="dword" data="00000011"/>
+				<value name="Multi.Modifier" type="dword" data="0000005b"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
 				<value name="MinimizeRestore" type="dword" data="000011c0"/>
 				<value name="MinimizeRestore2" type="dword" data="00000000"/>
@@ -589,9 +558,9 @@
 				<value name="DndRKey" type="hex" data="a2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
 			</key>
-			<key name="Tasks" modified="2016-02-04 09:13:51" build="150513">
-				<value name="Count" type="dword" data="0000000c"/>
-				<key name="Task1" modified="2016-02-04 09:13:51" build="150513">
+			<key name="Tasks" modified="2016-11-07 13:06:37" build="150513">
+				<value name="Count" type="dword" data="00000003"/>
+				<key name="Task1" modified="2016-11-07 13:06:37" build="150513">
 					<value name="Name" type="string" data="{Shells::cmd}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -600,24 +569,24 @@
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task2" modified="2016-02-04 09:13:51" build="150513">
-					<value name="Name" type="string" data="{Shells::cmd (Admin)}"/>
-					<value name="Flags" type="dword" data="00000000"/>
+				<key name="Task2" modified="2016-11-07 13:06:37" build="150513">
+					<value name="Name" type="string" data="{Bash::Git bash}"/>
+					<value name="Flags" type="dword" data="00000002"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data="cmd.exe /k &quot;%ConEmuBaseDir%\CmdInit.cmd&quot; -new_console:a"/>
+					<value name="Cmd1" type="string" data="&quot;%ProgramW6432%\Git\bin\sh.exe&quot; --login -i -new_console:nC:&quot;%ProgramW6432%\Git\etc\git.ico&quot;"/>
 					<value name="Active" type="dword" data="00000000"/>
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
-				<key name="Task3" modified="2016-02-04 09:13:51" build="150513">
-					<value name="Name" type="string" data="{Shells::cmd 64/32}"/>
+				<key name="Task3" modified="2016-11-07 13:06:37" build="150513">
+					<value name="Name" type="string" data="{Putty}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data="&gt; &quot;%windir%\system32\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is Native cmd.exe&quot;"/>
+					<value name="Cmd1" type="string" data="Putty.exe -new_console:n"/>
 					<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
-					<value name="Active" type="dword" data="00000001"/>
-					<value name="Count" type="dword" data="00000002"/>
+					<value name="Active" type="dword" data="00000000"/>
+					<value name="Count" type="dword" data="00000001"/>
 				</key>
 				<key name="Task4" modified="2016-02-04 09:13:51" build="150513">
 					<value name="Name" type="string" data="{Shells::PowerShell}"/>
@@ -701,10 +670,10 @@
 					<value name="Count" type="dword" data="00000001"/>
 				</key>
 			</key>
-			<key name="Apps" modified="2016-02-04 09:13:51" build="150513">
+			<key name="Apps" modified="2016-11-07 13:06:37" build="150513">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
-			<key name="Colors" modified="2016-02-04 09:13:51" build="150513">
+			<key name="Colors" modified="2016-11-07 13:06:37" build="150513">
 				<value name="Count" type="dword" data="00000000"/>
 			</key>
 		</key>

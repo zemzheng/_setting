@@ -6,12 +6,14 @@ alias ...="cd ../../"
 alias c="clear"
 alias cgs="clear && git status -sb"
 alias gs="git status -sb"
-alias gdc="git diff --word-diff"
+alias gdw="git diff --word-diff"
 alias gd="git difftool --tool=winmerge"
+alias gdc="git difftool --tool=winmerge --cached"
 # alias ga="git add"
 alias gm="git commit"
 alias gu="git add -A && git commit"
 alias gk="gitk --all -new_console:s &"
+alias grpv="git rev-parse --verify HEAD"
 alias gt="git log --pretty=oneline --graph --all --decorate"
 # alias gc="git checkout"
 alias gf='git fetch origin --prune'
@@ -65,3 +67,5 @@ function zz_base(){
     echo ""
 
 }
+
+zz_base;

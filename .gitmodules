@@ -7,36 +7,12 @@
 [submodule "plugins/tabular"]
 	path = plugins/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "plugins/jshint.vim"]
-	path = plugins/jshint.vim
-	url = https://github.com/vim-scripts/jshint.vim.git
-[submodule "plugins/vim-multiple-cursors"]
-	path = plugins/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule "plugins/vim-airline"]
 	path = plugins/vim-airline
 	url = https://github.com/bling/vim-airline.git
 [submodule "plugins/vim-coffee-script"]
 	path = plugins/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "plugins/vim-less"]
-	path = plugins/vim-less
-	url = https://github.com/groenewege/vim-less.git
-[submodule "plugins/syntastic"]
-	path = plugins/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "plugins/ctrlp"]
-	path = plugins/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "plugins/vim-javascript"]
-	path = plugins/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
 [submodule "plugins/ultinsnips"]
 	path = plugins/ultinsnips
 	url = https://github.com/SirVer/ultisnips.git
-[submodule "plugins/vimshell"]
-	path = plugins/vimshell
-	url = https://github.com/Shougo/vimshell.vim.git
-[submodule "plugins/vimproc"]
-	path = plugins/vimproc
-	url = https://github.com/Shougo/vimproc.vim.git
