@@ -16,3 +16,6 @@
 [submodule "plugins/ultinsnips"]
 	path = plugins/ultinsnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "plugins/ale"]
+	path = plugins/ale
+	url = https://github.com/w0rp/ale.git
