@@ -19,3 +19,6 @@
 [submodule "plugins/ale"]
 	path = plugins/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "plugins/typescript-vim"]
+	path = plugins/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
