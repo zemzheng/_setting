@@ -10,17 +10,19 @@ alias gdw="git diff --word-diff"
 alias gd="git difftool --tool=winmerge"
 alias gdc="git difftool --tool=winmerge --cached"
 # alias ga="git add"
-alias gm="git commit"
-alias gu="git add -A && git commit"
-alias gk="gitk --all -new_console:s &"
-alias grpv="git rev-parse --verify HEAD"
+# alias gm="git commit"
+alias gm="npx git-cz"
+alias gu="git add -A && npx git-cz"
+alias gl="npx auto-changelog"
+alias gk="gitk --all &"
+alias gh="git rev-parse --verify HEAD"
 alias gt="git log --pretty=oneline --graph --all --decorate"
 # alias gc="git checkout"
 alias gf='git fetch origin --prune'
 alias gc='for k in $( git branch | grep -v "*" ); do git branch -d $k; done;'
 alias ns='npm start'
 alias ndebug='npm run debug'
-alias ndev'npm run dev'
+alias ndev='npm run dev'
 alias sb="source ~/.bashrc"
 
 function v(){
