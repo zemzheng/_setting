@@ -17,6 +17,7 @@ alias gl="npx auto-changelog"
 alias gk="gitk --all &"
 alias gh="git rev-parse --verify HEAD"
 alias gt="git log --pretty=oneline --graph --all --decorate"
+alias gph="git push origin head"
 # alias gc="git checkout"
 alias gf='git fetch origin --prune'
 alias gc='for k in $( git branch | grep -v "*" ); do git branch -d $k; done;'
