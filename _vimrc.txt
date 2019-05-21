@@ -1,10 +1,11 @@
 " Eaxmple By Zem
-let $_setting = "~/vimsetting"
-let $_backup  = $_setting . '/backup'
+" let $_setting = "~/github/_setting"
+let $_backup  = $_setting . '/backup/'
+set directory=$_backup
 
 let $_plugins = $_setting . '/plugins/'
 
-" Global Setting 
+" Global Setting
 source $_setting/vimrc.global.vim
 
 " Global Win Setting
@@ -16,6 +17,3 @@ source $_setting/emmet.map.vim
 " Local Setting
 set backupext=.bak
 set backupdir=$_backup
-
-
-
